@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./style.css">
   <title>Тест по архетипам</title>
 </head>
 <body class="bg-slate-50">
@@ -13,19 +12,28 @@
 
     <h1 class="text-3xl font-bold text-slate-500 mb-8">Тест по архетипам</h1>
 
-
     <div class="quiz-container relative">
-      <div id="quiz" class="flex flex-col relative"></div>
+      <div id="quiz"
+        class="flex flex-col relative"></div>
     </div>
 
-    <button id="previous" class="border border-solid border-indigo-500 text-indigo-500 p-4 rounded hover:bg-indigo-500 hover:text-white transition-all">Предыдущий вопрос</button>
-    <button id="next" class="border border-solid border-indigo-500 text-indigo-500 p-4 rounded hover:bg-indigo-500 hover:text-white transition-all">Следующий вопрос</button>
-    <button id="submit" class="border border-solid border-indigo-500 text-indigo-500 p-4 rounded hover:bg-indigo-500 hover:text-white transition-all">Узнать результат</button>
+    <div class="buttons-list flex md:space-x-7 justify-center flex-wrap">
+      <button id="previous"
+        class="border border-solid border-indigo-500 text-indigo-500 p-4 mb-4 rounded hover:bg-indigo-500 hover:text-white transition-all">Предыдущий
+        вопрос</button>
+      <button id="next"
+        class="border border-solid border-indigo-500 text-indigo-500 p-4 mb-4 rounded hover:bg-indigo-500 hover:text-white transition-all">Следующий
+        вопрос</button>
+      <button id="submit"
+        class="bg-emerald-500 text-white p-4 mb-4 rounded hover:bg-emerald-700 hover:text-white transition-all">Узнать
+        результат</button>
+    </div>
 
     <div id="result"></div>
 
   </section>
 
   <script src="./script.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
